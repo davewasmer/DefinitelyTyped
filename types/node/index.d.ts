@@ -979,7 +979,41 @@ declare module "http" {
         destroy(): void;
     }
 
-    export var METHODS: string[];
+    export enum METHODS {
+        ACL = 'ACL',
+        BIND = 'BIND',
+        CHECKOUT = 'CHECKOUT',
+        CONNECT = 'CONNECT',
+        COPY = 'COPY',
+        DELETE = 'DELETE',
+        GET = 'GET',
+        HEAD = 'HEAD',
+        LINK = 'LINK',
+        LOCK = 'LOCK',
+        'M-SEARCH' = 'M-SEARCH',
+        MERGE = 'MERGE',
+        MKACTIVITY = 'MKACTIVITY',
+        MKCALENDAR = 'MKCALENDAR',
+        MKCOL = 'MKCOL',
+        MOVE = 'MOVE',
+        NOTIFY = 'NOTIFY',
+        OPTIONS = 'OPTIONS',
+        PATCH = 'PATCH',
+        POST = 'POST',
+        PROPFIND = 'PROPFIND',
+        PROPPATCH = 'PROPPATCH',
+        PURGE = 'PURGE',
+        PUT = 'PUT',
+        REBIND = 'REBIND',
+        REPORT = 'REPORT',
+        SEARCH = 'SEARCH',
+        SUBSCRIBE = 'SUBSCRIBE',
+        TRACE = 'TRACE',
+        UNBIND = 'UNBIND',
+        UNLINK = 'UNLINK',
+        UNLOCK = 'UNLOCK',
+        UNSUBSCRIBE = 'UNSUBSCRIBE'
+    }
 
     export var STATUS_CODES: {
         [errorCode: number]: string | undefined;
