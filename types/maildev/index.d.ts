@@ -130,7 +130,7 @@ declare module "maildev" {
     /**
      * Interface for {@link MailDev}.
      */
-    class MailDev {
+    export = class MailDev {
         /**
          * Constructor.
          *
@@ -214,6 +214,4 @@ declare module "maildev" {
         relayMail(idOrMailObject: string, done: (error: Error) => void): void;
     }
 
-    var out: typeof MailDev;
-    export = out;
 }
